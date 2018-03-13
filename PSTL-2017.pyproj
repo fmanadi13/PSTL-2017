@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5558aad0-616e-49c9-9bc3-a760ab932fa5}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>org2latex.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="org2latex.py" />
+    <Compile Include="org\common\lexer.py" />
+    <Compile Include="org\common\node.py" />
+    <Compile Include="org\common\parser.py" />
+    <Compile Include="org\common\stream.py" />
+    <Compile Include="org\common\__init__.py" />
+    <Compile Include="org\utils\export.py" />
+    <Compile Include="org\utils\helper.py" />
+    <Compile Include="org\utils\html.py" />
+    <Compile Include="org\utils\latex.py" />
+    <Compile Include="org\utils\parser.py" />
+    <Compile Include="org\utils\__init__.py" />
+    <Compile Include="org\__init__.py" />
+    <Compile Include="test\test_lexer.py" />
+    <Compile Include="test\test_node.py" />
+    <Compile Include="test\test_parser.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="org" />
+    <Folder Include="org\common" />
+    <Folder Include="org\utils" />
+    <Folder Include="test" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

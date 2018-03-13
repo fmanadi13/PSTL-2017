@@ -1,0 +1,4 @@
+#+LATEX_CLASS: exam
+#+LATEX_COMPILER: pdflatex
+#+DATE: \today
+#+AUTHOR: Fares M.

@@ -1,0 +1,62 @@
+#+LATEX_CLASS: exam
+#+LATEX_COMPILER: pdflatex
+#+DATE: \today
+
+
+* Figure
+  Ma figure [[monlabel]], et ma figure [[monlabel2]]
+  #+CAPTION: légende
+  #+NAME: monlabel
+  #+ATTR_LATEX: :width 0.5\textwidth 
+  [[./figs/ex-color.png]]
+
+  #+CAPTION: légende
+  #+NAME: monlabel2
+  #+ATTR_LATEX: :height 0.5\textwidth 
+  [[./figs/ex-color.png]]
+
+* Equations référencées
+  Mon équation [[moneq]], autre équation [[moneq2]]
+  #+NAME: moneq
+  \begin{equation}
+  \int f(x)dx
+  \end{equation}
+
+  #+NAME: moneq2
+  \begin{equation}
+  \int |f(x)|dx
+  \end{equation}
+
+* Export latex
+  - un mot qui commence par =\=
+    contenu à parser
+  - ou un environnement latex
+    \\begin{nomenvironnement}
+    \\end{nomenvironnement}
+  - ou encore :
+    #+BEGIN_latex
+    \LaTeX
+    #+END_latex
+  - equation inline commence et fini par un dollar : $\int f(x)$ ou
+    par  \( \int f(x)dx  \) 
+  - equation pas inline :
+    $$
+    \int f(x)dx
+    $$
+    ou \[ \int f(x)dx \]
+    
+* question
+  - [-] Une question
+  - [X] Une autre
+  - [ ] Une autre
+  - [x] Encore une autre
+
+* table
+  Voici ma table: [[matable]]
+  #+CAPTION: ma table
+  #+NAME: matable
+  #+ATTR_LATEX: :align |l|c|r|
+  | col 1 | col 2 | col3 |
+  |-------+-------+------|
+  | s     | s     | a    |
+  |       |       |      |

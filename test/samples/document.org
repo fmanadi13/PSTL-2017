@@ -1,0 +1,25 @@
+#+LATEX_CLASS: exam
+#+LATEX_CLASS_OPTIONS: french, answers, 12pt
+#+LATEX_HEADER:
+#+LATEX_HEADER_EXTRA:
+#+LATEX_COMPILER: pdflatex
+#+EXPORT_SELECT_TAGS: export
+#+TITLE: Examen 2018
+#+DESCRIPTION: Veuillez décrire votre document
+#+KEYWORDS:
+#+SUBTITLE:
+#+AUTHOR: MF
+#+DATE: \today
+
+[[https://www.google.fr][Un moteur de recherche]] 
+
+
+* table
+  Voici ma table: [[matable]]
+  #+CAPTION: ma table
+  #+NAME: matable
+  #+ATTR_LATEX: :align |l|c|r|
+  | col 1 | col 2 | col3 |
+  |-------+-------+------|
+  | s     | s     | a    |
+  |       |       |      |
