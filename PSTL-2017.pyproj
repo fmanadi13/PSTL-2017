@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5558aad0-616e-49c9-9bc3-a760ab932fa5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>org2latex.py</StartupFile>
+    <StartupFile>pstl\org2latex.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -19,29 +19,30 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="org2latex.py" />
-    <Compile Include="org\common\lexer.py" />
-    <Compile Include="org\common\node.py" />
-    <Compile Include="org\common\parser.py" />
-    <Compile Include="org\common\stream.py" />
-    <Compile Include="org\common\__init__.py" />
-    <Compile Include="org\utils\export.py" />
-    <Compile Include="org\utils\helper.py" />
-    <Compile Include="org\utils\html.py" />
-    <Compile Include="org\utils\latex.py" />
-    <Compile Include="org\utils\parser.py" />
-    <Compile Include="org\utils\__init__.py" />
-    <Compile Include="org\__init__.py" />
-    <Compile Include="test\test_lexer.py" />
-    <Compile Include="test\test_node.py" />
-    <Compile Include="test\test_parser.py" />
-    <Compile Include="__init__.py" />
+    <Compile Include="pstl\org2latex.py" />
+    <Compile Include="pstl\org\common\lexer.py" />
+    <Compile Include="pstl\org\common\node.py" />
+    <Compile Include="pstl\org\common\parser.py" />
+    <Compile Include="pstl\org\common\stream.py" />
+    <Compile Include="pstl\org\common\__init__.py" />
+    <Compile Include="pstl\org\utils\export.py" />
+    <Compile Include="pstl\org\utils\helper.py" />
+    <Compile Include="pstl\org\utils\html.py" />
+    <Compile Include="pstl\org\utils\latex.py" />
+    <Compile Include="pstl\org\utils\parser.py" />
+    <Compile Include="pstl\org\utils\__init__.py" />
+    <Compile Include="pstl\org\__init__.py" />
+    <Compile Include="pstl\test\test_lexer.py" />
+    <Compile Include="pstl\test\test_node.py" />
+    <Compile Include="pstl\test\test_parser.py" />
+    <Compile Include="pstl\__init__.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="org" />
-    <Folder Include="org\common" />
-    <Folder Include="org\utils" />
-    <Folder Include="test" />
+    <Folder Include="pstl\" />
+    <Folder Include="C:\Users\fmana\source\repos\PSTL-2017\pstl\org\" />
+    <Folder Include="C:\Users\fmana\source\repos\PSTL-2017\pstl\org\common\" />
+    <Folder Include="C:\Users\fmana\source\repos\PSTL-2017\pstl\org\utils\" />
+    <Folder Include="C:\Users\fmana\source\repos\PSTL-2017\pstl\test\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
