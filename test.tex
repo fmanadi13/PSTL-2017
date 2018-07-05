@@ -1,0 +1,84 @@
+\documentclass[french,a4paper,answers,addpoints,12pt]{exam}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage[left=20mm,top=30mm,bottom=20mm,head=20mm]{geometry}%
+\usepackage{qrcode}%
+\usepackage{tabularx}%
+\usepackage{graphicx}%
+\usepackage{fancyhdr}%
+\usepackage{tikz}%
+\newcommand{\class}{Master d'informatique}%
+\newcommand{\examunit}{ARES}%
+\newcommand{\allowdocuments}{Notes de cours autorisées}%
+\newcommand{\examnum}{Première Session}%
+\newcommand{\term}{Janvier 2014}%
+\newcommand{\examyear}{2017{-}2018}%
+\newcommand{\timelimit}{2 Heures}%
+\newcommand{\university}{Université Pièrre et Marie Curie}%
+\usetikzlibrary{positioning}%
+\checkboxchar{$\Box$}%
+\checkedchar{$\blacksquare$}%
+\fancypagestyle{header}{ 
+\renewcommand{\headrulewidth}{0pt}%
+\renewcommand{\footrulewidth}{0pt}%
+\fancyhead{ 
+}%
+\fancyfoot{ 
+}%
+\runningheadrule%
+\fancyhead[L]{ 
+\begin{tikzpicture}[node distance=5mm]%
+\node[draw,circle,anchor=west,minimum size=0.5cm,fill=black] (lCircle) {};%
+\node[right=of lCircle] (SNL) {Numéro d étudiant};%
+\node[draw,right=of SNL,minimum height=1cm,minimum width=4cm] (SNB) {};%
+\end{tikzpicture}
+}%
+\fancyhead[R]{ 
+\begin{tikzpicture}[node distance=5mm]%
+\node[draw,circle,anchor=east,minimum size=0.5cm,fill=black] (rCircle) {};%
+\node[left=of rCircle] (QR) {\qrcode[version=5, height=1cm]{Dummy code}};%
+\end{tikzpicture}
+}%
+\fancyfoot[L]{ 
+\begin{tikzpicture}[node distance=5mm]%
+\node[draw,circle,anchor=west,minimum size=0.5cm,fill=black] (lCircle) {};%
+\end{tikzpicture}
+}%
+\fancyfoot[C]{ 
+Center Footer
+}%
+\fancyfoot[R]{ 
+\begin{tikzpicture}[node distance=5mm]%
+\node[draw,circle,anchor=east,minimum size=0.5cm,fill=black] (rCircle) {};%
+\end{tikzpicture}
+}%
+\renewcommand{\headrulewidth}{0.5pt}
+}%
+%
+\begin{document}%
+\normalsize%
+\pagestyle{header}%
+\begin{tabularx}{\linewidth}{c X c}%
+\textbf{\class}&\textbf{Module \examunit}&\textbf{\university}\\%
+\textit{\allowdocuments}&\textit{Durée \timelimit}&\textit{Année \examyear}\\%
+\end{tabularx}%
+
+
+\begin{figure}[h!]%
+\centering%
+\includegraphics[width=120px]{pstl/figures/type_reseau.png}%
+\caption{légende}%
+\end{figure}
+
+%
+\begin{tabular}{|l|c|r|}%
+ col 1 & col 2 & col3 \\%
+\hline%
+ s     & s     & a    \\%
+&&\\%
+\end{tabular}%
+\linebreak%
+\end{document}

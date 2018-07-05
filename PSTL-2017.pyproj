@@ -5,13 +5,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5558aad0-616e-49c9-9bc3-a760ab932fa5}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>pstl\org2latex.py</StartupFile>
+    <StartupFile>pstl\__main__.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <InterpreterId />
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <CommandLineArguments>-v -t --pathname pstl/test/samples/  pstl/test/samples/directives.org -i pstl/photo_4.jpg</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -19,22 +22,37 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="pstl\org2latex.py" />
-    <Compile Include="pstl\org\common\lexer.py" />
-    <Compile Include="pstl\org\common\node.py" />
-    <Compile Include="pstl\org\common\parser.py" />
-    <Compile Include="pstl\org\common\stream.py" />
-    <Compile Include="pstl\org\common\__init__.py" />
-    <Compile Include="pstl\org\utils\export.py" />
-    <Compile Include="pstl\org\utils\helper.py" />
-    <Compile Include="pstl\org\utils\html.py" />
-    <Compile Include="pstl\org\utils\latex.py" />
-    <Compile Include="pstl\org\utils\parser.py" />
-    <Compile Include="pstl\org\utils\__init__.py" />
+    <Compile Include="pstl\ast\Comment.py" />
+    <Compile Include="pstl\ast\Directive.py" />
+    <Compile Include="pstl\ast\Document.py" />
+    <Compile Include="pstl\ast\EmptyLine.py" />
+    <Compile Include="pstl\ast\Figure.py" />
+    <Compile Include="pstl\ast\Headline.py" />
+    <Compile Include="pstl\ast\LatexFragment.py" />
+    <Compile Include="pstl\ast\Link.py" />
+    <Compile Include="pstl\ast\Lists.py" />
+    <Compile Include="pstl\ast\Location.py" />
+    <Compile Include="pstl\ast\Node.py" />
+    <Compile Include="pstl\ast\Paragraph.py" />
+    <Compile Include="pstl\ast\pylatex_extend\checkboxes.py" />
+    <Compile Include="pstl\ast\pylatex_extend\headfoot.py" />
+    <Compile Include="pstl\ast\pylatex_extend\parbox.py" />
+    <Compile Include="pstl\ast\pylatex_extend\questions.py" />
+    <Compile Include="pstl\ast\Reference.py" />
+    <Compile Include="pstl\ast\Tabular.py" />
+    <Compile Include="pstl\ast\Visitor.py" />
+    <Compile Include="pstl\ast\__init__.py" />
+    <Compile Include="pstl\AutoCorrector.py" />
+    <Compile Include="pstl\AutoQcmLexer.py" />
+    <Compile Include="pstl\AutoQcmListener.py" />
+    <Compile Include="pstl\AutoQcmParser.py" />
+    <Compile Include="pstl\AutoQcmParserListener.py" />
+    <Compile Include="pstl\AutoQcmParserVisitor.py" />
+    <Compile Include="pstl\AutoQcmVisitor.py" />
+    <Compile Include="pstl\__main__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pstl\org\__init__.py" />
-    <Compile Include="pstl\test\test_lexer.py" />
-    <Compile Include="pstl\test\test_node.py" />
-    <Compile Include="pstl\test\test_parser.py" />
     <Compile Include="pstl\__init__.py" />
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +61,47 @@
     <Folder Include="C:\Users\fmana\source\repos\PSTL-2017\pstl\org\common\" />
     <Folder Include="C:\Users\fmana\source\repos\PSTL-2017\pstl\org\utils\" />
     <Folder Include="C:\Users\fmana\source\repos\PSTL-2017\pstl\test\" />
+    <Folder Include="pstl\ast\" />
+    <Folder Include="pstl\ast\pylatex_extend\" />
+    <Folder Include="pstl\ast\pylatex_extend\__pycache__\" />
+    <Folder Include="pstl\ast\__pycache__\" />
+    <Folder Include="pstl\data\" />
+    <Folder Include="pstl\images\" />
+    <Folder Include="pstl\output\" />
+    <Folder Include="pstl\omr\" />
+    <Folder Include="pstl\org\" />
+    <Folder Include="pstl\test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pstl\ast\pylatex_extend\__pycache__\checkboxes.cpython-36.pyc" />
+    <Content Include="pstl\ast\pylatex_extend\__pycache__\headfoot.cpython-36.pyc" />
+    <Content Include="pstl\ast\pylatex_extend\__pycache__\parbox.cpython-36.pyc" />
+    <Content Include="pstl\ast\pylatex_extend\__pycache__\questions.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Comment.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Directive.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Document.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\EmptyLine.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Figure.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Headline.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\LatexFragment.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\List.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Lists.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Location.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Node.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Paragraph.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Reference.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Tabular.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\Visitor.cpython-36.pyc" />
+    <Content Include="pstl\ast\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="pstl\AutoQcm.g4" />
+    <Content Include="pstl\AutoQcm.interp" />
+    <Content Include="pstl\AutoQCM.pdf" />
+    <Content Include="pstl\AutoQCM.tex" />
+    <Content Include="pstl\AutoQcm.tokens" />
+    <Content Include="pstl\data\students.csv" />
+    <Content Include="pstl\images\image21001_1.gif" />
+    <Content Include="pstl\images\image21001_1.png" />
+    <Content Include="pstl\input.rst" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

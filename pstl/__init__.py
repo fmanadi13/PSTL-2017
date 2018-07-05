@@ -8,5 +8,3 @@
     reminiscent.
 """
 __version__ = "0.0.1"
- 
-from pstl.core import proclamer

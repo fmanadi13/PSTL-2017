@@ -1,0 +1,78 @@
+\documentclass{article}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{lastpage}%
+\usepackage{enumitem}%
+\usepackage{amsmath}%
+\usepackage{amssymb}%
+%
+\title{Emacs org{-}mode examples}%
+\author{Eric H. Neilsen, Jr.}%
+\date{\today}%
+%
+\begin{document}%
+\normalsize%
+\maketitle%
+\section{A section}%
+\label{sec:A section}%
+Some regular text, %
+\textit{italic text, }%
+and Some %
+\textbf{bold text}%
+\subsection{A subsection}%
+\label{subsec:A subsection}%
+Also some crazy characters: \$\&\#\{\}
+
+%
+\section{"Itemize" list}%
+\label{sec:Itemize list}%
+\begin{itemize}%
+\item%
+the first item%
+\item%
+the second item%
+\item%
+the third etc%
+\ldots%
+\end{itemize}
+
+%
+\section{"Enumerate" list}%
+\label{sec:Enumerate list}%
+\begin{enumerate}[label=\alph*),start=20]%
+\item%
+the first item%
+\item%
+the second item%
+\item%
+the third etc \ldots%
+\end{enumerate}
+
+%
+\section{"Description" list}%
+\label{sec:Description list}%
+\begin{description}%
+\item[First]%
+The first item%
+\item[Second]%
+The second item%
+\item[Third]%
+The third etc \ldots%
+\end{description}
+
+%
+\section{"Checkboxes" list}%
+\label{sec:Checkboxes list}%
+\begin{checkboxes}%
+\choice%
+The first item%
+\CorrectChoice%
+The second item%
+\choice%
+The third etc \ldots%
+\end{checkboxes}
+
+%
+\end{document}
